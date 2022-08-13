@@ -1,0 +1,155 @@
+body{
+    font-family: calibri, sans-serif;
+}
+
+.jogoInicio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh
+}
+
+#botaoNovoJogo {
+  background-color: #4444ff;
+  border: 0.25rem solid #ffffff;
+  border-radius: 0.75rem;
+  color: #eeeeee;
+  cursor: pointer;
+  font-size: 2.5rem;
+  padding: 1rem;
+  margin: 1rem;
+  width: 15rem;
+}
+
+#botaoAdicionarPalavras {
+  background-color: #4444ff;
+  border: 0.25rem solid #ffffff;
+  border-radius: 0.75rem;
+  color: #eeeeee;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  margin: 1rem;
+}
+
+#botaoNovoJogo:hover{
+    border: 0.25rem solid #4444ff;
+} 
+
+#botaoAdicionarPalavras:hover{
+    border: 0.25rem solid #4444ff;
+}
+
+.adicionaPalavra{
+    align-items: center;
+    background-color: #4444ff;
+    display: none;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    width: 100%;
+}
+
+.adicionaPalavra__campo{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+#campoPalavraNova{
+    border: 0.25rem solid #3333ff;
+    border-radius: 1rem;
+    color: #4444ff;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+#campoPalavraNova::placeholder{
+    color: #4444ff;
+}
+
+#campoPalavraNova:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+label{
+    color: #eeeeee;
+    font-size: 1.75rem;
+    font-weight: 100;
+}
+
+.adicionaPalavra__botoes{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    width: 60%;
+}
+
+#botaoCancelar, #botaoSalvar{
+    background-color: #eeeeee;
+    border: 0.15rem outset #aaaaaa;
+    border-radius: 0.75rem;
+    color: #4444ff;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 1rem;
+}
+
+#botaoCancelar:hover{
+    background-color: #ffffff;
+} 
+
+#botaoSalvar:hover{
+    background-color: #ffffff;
+}
+
+#apareceForca{
+    display: none;
+    justify-content: center;
+}
+
+#tela {
+  border: 0.2rem solid black;
+}
+
+.botoesCanvas{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    left: 5rem;
+    position: absolute;
+    top: 0;
+}
+
+#botao2NovoJogo, #botaoSair{
+    background-color: #4444ff;
+    border: 0.25rem outset #0000ff;
+    border-radius: 0.75rem;
+    color: #eeeeee;
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin: 0.5rem;
+    padding: 1rem;
+    width: 15rem;
+}
+
+#botao2NovoJogo:hover{
+    background-color: #2222ff;
+}
+
+#botaoSair:hover{
+    background-color: #2222ff;
+}
+
+#mensagemFinal{
+    font-size: 4rem;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    top: 3rem;
+    width: 100%;
+}
